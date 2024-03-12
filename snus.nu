@@ -21,7 +21,7 @@ def copy [
 
 # Simple NUshell Sync
 def main [
-  --config (-c): string # Read custom config. If not specified, the default config is used
+  --config (-c): string # Read custom config. If not specified, the default config is used. Config must have field "folders_to_sync": {} and "backup_path": ""
   --backup (-b) # Make a backup
   --date (-d) # Used with -b. If specified, the Current date will be added to the name of the backup folder at the end
   --force (-f) # Used with -b and WITHOUT -d. Re-creates a backup
